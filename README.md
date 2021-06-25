@@ -1,6 +1,119 @@
 # neumorphic_container
 
-Fully customisable neumorphic containers for your flutter projects.
+Fully customisable `Neumorphic Containers` for your flutter projects.
+
+<img src="img2.jpeg" height="300em" /> <img src="img4.jpeg" height="300em" /> <img src="img6.jpeg" height="300em" />
+
+## Getting Started
+In the `pubspec.yaml` of your flutter project, add the following dependency:
+
+```yaml
+dependencies:
+  ...
+  neumorphic_container: "^0.1.0"
+```
+
+In your library add the following import:
+
+```dart
+import 'package:neumorphic_container/neumorphic_container.dart';
+```
+
+For help getting started with Flutter, view the online [documentation](https://flutter.io/).
+
+## Usage
+Simple Container:
+For best results, set the background
+color of a surrounding widget to match
+the color you set for the container.
+
+```
+NeumorphicContainer(
+              height: 150,
+              width: 150,
+              borderRadius: 10,
+              primaryColor: Color(0xfff0f0f0),
+              curvature: Curvature.flat,
+            ),
+```
+<img src="img3.jpg" height="300em" />
+
+Container with Border:
+
+```
+ NeumorphicContainer(
+              height: 130,
+              width: 130,
+              borderRadius: 150,
+              primaryColor: Color(0xff292929),
+              borderColor: Colors.orange,
+              curvature: Curvature.concave,
+              child: Icon(Icons.phone,color: Colors.orange,size: 30,),
+            ),
+```
+<img src="img5.jpeg" height="300em" />
+
+Curvature
+
+```dart
+import 'package:flutter/material.dart';
+import 'package:neumorphic_container/neumorphic_container.dart';
+
+class Example extends StatefulWidget {
+  @override
+  _ExampleState createState() => _ExampleState();
+}
+
+class _ExampleState extends State<Example> {
+  @override
+  Widget build(BuildContext context) {
+    Color color = Color(0xfff0f0f0);
+    return Scaffold(
+      backgroundColor: color,
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: NeumorphicContainer(
+                height: 150,
+                width: 150,
+                borderRadius: 150,
+                depth: 20,
+                primaryColor: color,
+                curvature: Curvature.flat,
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: NeumorphicContainer(
+                height: 150,
+                width: 150,
+                borderRadius: 150,
+                primaryColor: color,
+                spread: 5,
+                curvature: Curvature.convex,
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: NeumorphicContainer(
+                height: 150,
+                width: 150,
+                borderRadius: 150,
+                primaryColor: color,
+                curvature: Curvature.concave,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+```
+<img src="img4.jpeg" height="300em" />
 
 ## Getting Started
 
@@ -12,3 +125,5 @@ multiple Flutter or Dart projects.
 For help getting started with Flutter, view our 
 [online documentation](https://flutter.dev/docs), which offers tutorials, 
 samples, guidance on mobile development, and a full API reference.
+
+### Show some :heart: and star the repo to support the project
