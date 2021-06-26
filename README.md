@@ -36,7 +36,7 @@ NeumorphicContainer(
               curvature: Curvature.flat,
             ),
 ```
-<img src="img3.jpg" height="300em" />
+<img src="img3.jpeg" height="300em" />
 
 Container with Border:
 
@@ -113,7 +113,7 @@ class _ExampleState extends State<Example> {
   }
 }
 ```
-<img src="img4.jpeg" height="300em" />
+<img src="img4.jpeg" height="400em" />
 
 ## Getting Started
 
