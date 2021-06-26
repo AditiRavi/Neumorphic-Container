@@ -2,7 +2,7 @@
 
 Fully customisable `Neumorphic Containers` for your flutter projects.
 
-<img src="img2.jpeg" height="300em" /> <img src="img4.jpeg" height="300em" /> <img src="img6.jpeg" height="300em" />
+<img src="https://github.com/AditiRavi/Neumorphic-Container/blob/main/img2.jpeg" height="300em" /> <img src="https://github.com/AditiRavi/Neumorphic-Container/blob/main/img4.jpeg" height="300em" /> <img src="https://github.com/AditiRavi/Neumorphic-Container/blob/main/img6.jpeg" height="300em" />
 
 ## Getting Started
 In the `pubspec.yaml` of your flutter project, add the following dependency:
@@ -36,7 +36,7 @@ NeumorphicContainer(
               curvature: Curvature.flat,
             ),
 ```
-<img src="img3.jpeg" height="300em" />
+<img src="https://github.com/AditiRavi/Neumorphic-Container/blob/main/img3.jpeg" height="300em" />
 
 Container with Border:
 
@@ -51,7 +51,7 @@ Container with Border:
               child: Icon(Icons.phone,color: Colors.orange,size: 30,),
             ),
 ```
-<img src="img5.jpeg" height="300em" />
+<img src="https://github.com/AditiRavi/Neumorphic-Container/blob/main/img5.jpeg" height="300em" />
 
 Curvature
 
@@ -113,7 +113,7 @@ class _ExampleState extends State<Example> {
   }
 }
 ```
-<img src="img4.jpeg" height="400em" />
+<img src="https://github.com/AditiRavi/Neumorphic-Container/blob/main/img4.jpeg" height="400em" />
 
 ## Getting Started
 
