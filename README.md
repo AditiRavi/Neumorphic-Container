@@ -2,7 +2,7 @@
 
 Fully customisable `Neumorphic Containers` for your flutter projects.
 
-<img src="https://raw.githubusercontent.com/AditiRavi/Neumorphic-Container/main/img2.jpeg" height="300em" /> <img src="https://github.com/AditiRavi/Neumorphic-Container/blob/main/img4.jpeg" height="300em" /> <img src="https://github.com/AditiRavi/Neumorphic-Container/blob/main/img6.jpeg" height="300em" />
+<img src="https://raw.githubusercontent.com/AditiRavi/Neumorphic-Container/main/img2.jpeg" height="300em" /> <img src="https://raw.githubusercontent.com/AditiRavi/Neumorphic-Container/main/img4.jpeg" height="300em" /> <img src="https://raw.githubusercontent.com/AditiRavi/Neumorphic-Container/main/img6.jpeg" height="300em" />
 
 ## Getting Started
 In the `pubspec.yaml` of your flutter project, add the following dependency:
@@ -36,7 +36,7 @@ NeumorphicContainer(
               curvature: Curvature.flat,
             ),
 ```
-<img src="https://github.com/AditiRavi/Neumorphic-Container/blob/main/img3.jpeg" height="300em" />
+<img src="https://raw.githubusercontent.com/AditiRavi/Neumorphic-Container/main/img3.jpeg" height="300em" />
 
 Container with Border:
 
@@ -46,12 +46,14 @@ Container with Border:
               width: 130,
               borderRadius: 150,
               primaryColor: Color(0xff292929),
+              //add border color and thickness
               borderColor: Colors.orange,
+              borderThickness: 1,
               curvature: Curvature.concave,
               child: Icon(Icons.phone,color: Colors.orange,size: 30,),
             ),
 ```
-<img src="https://github.com/AditiRavi/Neumorphic-Container/blob/main/img5.jpeg" height="300em" />
+<img src="https://raw.githubusercontent.com/AditiRavi/Neumorphic-Container/main/img5.jpeg" height="300em" />
 
 Curvature
 
@@ -82,6 +84,7 @@ class _ExampleState extends State<Example> {
                 borderRadius: 150,
                 depth: 20,
                 primaryColor: color,
+                //flat neumorphism design
                 curvature: Curvature.flat,
               ),
             ),
@@ -93,6 +96,7 @@ class _ExampleState extends State<Example> {
                 borderRadius: 150,
                 primaryColor: color,
                 spread: 5,
+                //convex neumorphism design
                 curvature: Curvature.convex,
               ),
             ),
@@ -103,6 +107,7 @@ class _ExampleState extends State<Example> {
                 width: 150,
                 borderRadius: 150,
                 primaryColor: color,
+                //concave neumorphism design
                 curvature: Curvature.concave,
               ),
             ),
@@ -113,7 +118,7 @@ class _ExampleState extends State<Example> {
   }
 }
 ```
-<img src="https://github.com/AditiRavi/Neumorphic-Container/blob/main/img4.jpeg" height="400em" />
+<img src="https://raw.githubusercontent.com/AditiRavi/Neumorphic-Container/main/img4.jpeg" height="400em" />
 
 ## Getting Started
 
