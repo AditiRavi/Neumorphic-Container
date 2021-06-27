@@ -2,7 +2,7 @@
 
 Fully customisable `Neumorphic Containers` for your flutter projects.
 
-<img src="https://github.com/AditiRavi/Neumorphic-Container/blob/main/img2.jpeg" height="300em" /> <img src="https://github.com/AditiRavi/Neumorphic-Container/blob/main/img4.jpeg" height="300em" /> <img src="https://github.com/AditiRavi/Neumorphic-Container/blob/main/img6.jpeg" height="300em" />
+<img src="https://raw.githubusercontent.com/AditiRavi/Neumorphic-Container/main/img2.jpeg" height="300em" /> <img src="https://github.com/AditiRavi/Neumorphic-Container/blob/main/img4.jpeg" height="300em" /> <img src="https://github.com/AditiRavi/Neumorphic-Container/blob/main/img6.jpeg" height="300em" />
 
 ## Getting Started
 In the `pubspec.yaml` of your flutter project, add the following dependency:
