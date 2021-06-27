@@ -24,6 +24,7 @@ class _ExampleState extends State<Example> {
                 borderRadius: 150,
                 depth: 20,
                 primaryColor: color,
+                //flat neumorphism design
                 curvature: Curvature.flat,
               ),
             ),
@@ -35,6 +36,7 @@ class _ExampleState extends State<Example> {
                 borderRadius: 150,
                 primaryColor: color,
                 spread: 5,
+                //convex neumorphism design
                 curvature: Curvature.convex,
               ),
             ),
@@ -45,6 +47,7 @@ class _ExampleState extends State<Example> {
                 width: 150,
                 borderRadius: 150,
                 primaryColor: color,
+                //concave neumorphism design
                 curvature: Curvature.concave,
               ),
             ),
