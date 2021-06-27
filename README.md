@@ -10,7 +10,7 @@ In the `pubspec.yaml` of your flutter project, add the following dependency:
 ```yaml
 dependencies:
   ...
-  neumorphic_container: "^0.0.1+1"
+  neumorphic_container: "^0.0.1+2"
 ```
 
 In your library add the following import:
