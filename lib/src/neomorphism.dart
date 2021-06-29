@@ -3,17 +3,17 @@ import 'package:flutter/material.dart';
 enum Curvature { concave, convex, flat }
 
 class NeumorphicContainer extends StatelessWidget {
-  final double height;
-  final double width;
-  final int depth;
-  final Color primaryColor;
-  final Color borderColor;
-  final double borderThickness;
-  final double spread;
-  final Widget child;
-  final double borderRadius;
-  final BorderRadius customRadius;
-  final Curvature curvature;
+  final double? height;
+  final double? width;
+  final int? depth;
+  final Color? primaryColor;
+  final Color? borderColor;
+  final double? borderThickness;
+  final double? spread;
+  final Widget? child;
+  final double? borderRadius;
+  final BorderRadius? customRadius;
+  final Curvature? curvature;
 
   NeumorphicContainer({
     this.child,
@@ -28,7 +28,7 @@ class NeumorphicContainer extends StatelessWidget {
     this.customRadius,
     this.curvature,
   });
-
+ 
   List<Color> smoothGradient(baseColor, depth) {
     return [
       baseColor,
@@ -62,33 +62,33 @@ class NeumorphicContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final double heightValue = height == null ? null : height;
-    final double widthValue = width == null ? null : width;
-    final int depthValue = depth == null ? 20 : depth;
-    Color colorValue = primaryColor == null ? Color(0xFFf0f0f0) : primaryColor;
-    final double spreadValue = spread == null ? 6 : spread;
+    final double? heightValue = height == null ? null : height;
+    final double? widthValue = width == null ? null : width;
+    final int? depthValue = depth == null ? 20 : depth;
+    Color colorValue = primaryColor == null ? Color(0xFFf0f0f0) : primaryColor!;
+    final double spreadValue = spread == null ? 6 : spread!;
     final bool eValue = false;
-    BorderRadius borderRadiusValue = borderRadius == null
+    BorderRadius? borderRadiusValue = borderRadius == null
         ? BorderRadius.zero
-        : BorderRadius.circular(borderRadius);
-    final double thicknessValue = borderThickness == null ? 0 : borderThickness;
+        : BorderRadius.circular(borderRadius!);
+    final double? thicknessValue = borderThickness == null ? 0 : borderThickness;
     Border borderValue = borderColor == null
-        ? Border.all(color: Colors.transparent, width: thicknessValue)
-        : Border.all(color: borderColor, width: thicknessValue);
+        ? Border.all(color: Colors.transparent, width: thicknessValue!)
+        : Border.all(color: borderColor!, width: thicknessValue!);
 
     if (customRadius != null) {
       borderRadiusValue = customRadius;
     }
-    final Curvature curveTypeValue =
+    final Curvature? curveTypeValue =
         curvature == null ? Curvature.flat : curvature;
 
     List<BoxShadow> shadowList = [
       BoxShadow(
-          color: _baseColor(colorValue, eValue ? 0 - depthValue : depthValue),
+          color: _baseColor(colorValue, eValue ? 0 - depthValue! : depthValue),
           offset: Offset(0 - spreadValue, 0 - spreadValue),
           blurRadius: spreadValue),
       BoxShadow(
-          color: _baseColor(colorValue, eValue ? depthValue : 0 - depthValue),
+          color: _baseColor(colorValue, eValue ? depthValue : 0 - depthValue!),
           offset: Offset(spreadValue, spreadValue),
           blurRadius: spreadValue)
     ];
@@ -96,7 +96,7 @@ class NeumorphicContainer extends StatelessWidget {
     if (eValue) shadowList = shadowList.reversed.toList();
     if (eValue) colorValue = _baseColor(colorValue, 0 - depthValue ~/ 2);
 
-    List<Color> gradientColors;
+    late List<Color> gradientColors;
     switch (curveTypeValue) {
       case Curvature.concave:
         gradientColors = concaveGradients(colorValue, depthValue);
